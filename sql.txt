@@ -1,0 +1,12 @@
+select distinct p.ProductName 
+from Products p left outer join [Order Details] o
+on p.ProductID = o.ProductID 
+
+
+
+select distinct c.CompanyName , c.CustomerID 
+from Customers c left outer join orders o
+on c.CustomerID = o.CustomerID 
+where o.CustomerID  is null
+
+
